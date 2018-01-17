@@ -1,0 +1,255 @@
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background-color: transparent;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 2000;
+	width: 83%;
+	max-width: 960px;
+	min-width: 800px;
+	height: auto;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+	position: relative;
+	margin: 0 auto;
+	padding: 96px 100px 77px;
+	font: 800 18px/18px "Gilroy", "Arial", sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.md-content .form-group__wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.md-content .form-group__column {
+	width: 47.27%;
+}
+
+.md-content .form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 35px;
+}
+
+.md-content .form-group:first-child {
+	margin-right: 40px;
+}
+
+.md-content .form-group:last-child {
+	width: 100%;
+	margin-bottom: 38px;
+}
+
+.form-group span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 17px 20px 16px 20px;
+	box-sizing: border-box;
+	font: 400 14px/18px "Open Sans", "Arial", sans-serif;
+	color: #464646;
+	background-color: rgba(229, 229, 229, 0.5);
+	border: none;
+}
+
+.form-group textarea {
+	height: 155px;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+	background-color: rgba(229, 229, 229, 0.8);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.form-group input::-webkit-input-placeholder { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+.form-group input::-moz-placeholder          { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+.form-group input:-moz-placeholder           { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+.form-group input:-ms-input-placeholder      { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+
+.form-group textarea::-webkit-input-placeholder { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+.form-group textarea::-moz-placeholder          { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+.form-group textarea:-moz-placeholder           { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+.form-group textarea:-ms-input-placeholder      { color: rgba(70, 70, 70, 0.4); transition: color 0.3s ease-in-out; }
+
+.form-group input:hover::-webkit-input-placeholder { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+.form-group input:hover::-moz-placeholder          { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+.form-group input:hover:-moz-placeholder           { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+.form-group input:hover:-ms-input-placeholder      { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+
+.form-group textarea:hover::-webkit-input-placeholder { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+.form-group textarea:hover::-moz-placeholder          { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+.form-group textarea:hover:-moz-placeholder           { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+.form-group textarea:hover:-ms-input-placeholder      { color: rgba(70, 70, 70, 0.8); transition: color 0.3s ease-in-out; }
+
+.form-group input:focus,
+.form-group textarea:focus {
+	background-color: #ffffff;
+	box-shadow: inset 0 0 0 3px #e5e5e5;
+	outline: none;
+	transition: background-color 0.15s ease-in-out,
+				box-shadow 0.15s ease-in-out;
+}
+
+.form-group input:focus::-webkit-input-placeholder { color: #464646; transition: color 0.15s ease-in-out; }
+.form-group input:focus::-moz-placeholder          { color: #464646; transition: color 0.15s ease-in-out; }
+.form-group input:focus:-moz-placeholder           { color: #464646; transition: color 0.15s ease-in-out; }
+.form-group input:focus:-ms-input-placeholder      { color: #464646; transition: color 0.15s ease-in-out; }
+
+.form-group textarea:focus::-webkit-input-placeholder { color: #464646; transition: color 0.15s ease-in-out; }
+.form-group textarea:focus::-moz-placeholder          { color: #464646; transition: color 0.15s ease-in-out; }
+.form-group textarea:focus:-moz-placeholder           { color: #464646; transition: color 0.15s ease-in-out; }
+.form-group textarea:focus:-ms-input-placeholder      { color: #464646; transition: color 0.15s ease-in-out; }
+
+.md-content .md-close {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	z-index: 550;
+	width: 55px;
+	height: 55px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.md-content .md-close::after {
+	content: "×";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 600;
+    width: 55px;
+    height: 55px;
+    font: 100 48px/52px "Open Sans", "Arial", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(255, 198, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.25s;
+}
+
+.md-content .md-close:hover:after {
+	color: #ffffff;
+	background-color: rgba(255, 198, 0, 1);
+}
+
+.md-content .md-close:active:after {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 198, 0, 1);
+}
+
+.md-show.md-effect-19 ~ .md-overlay {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.md-show.md-effect-19 ~ .md-overlay {
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: OpenTop 0.5s forwards ease-in;
+	-moz-transform-style: preserve-3d;
+	-moz-transform-origin: 50% 100%;
+	-moz-animation: OpenTop 0.5s forwards ease-in;
+	transform-style: preserve-3d;
+	transform-origin: 50% 100%;
+	animation: OpenTop 0.5s forwards ease-in;
+}
+
+@-webkit-keyframes OpenTop {
+	50% {
+		-webkit-transform: rotateX(10deg);
+		-webkit-animation-timing-function: ease-out;
+	}
+}
+
+@-moz-keyframes OpenTop {
+	50% {
+		-moz-transform: rotateX(10deg);
+		-moz-animation-timing-function: ease-out;
+	}
+}
+
+@keyframes OpenTop {
+	50% {
+		transform: rotateX(10deg);
+		animation-timing-function: ease-out;
+	}
+}
+
+.md-effect-19 .md-content {
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	opacity: 0;
+}
+
+.md-show.md-effect-19 .md-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+	-webkit-transition: all 0.5s 0.1s;
+	-moz-transition: all 0.5s 0.1s;
+	transition: all 0.5s 0.1s;
+}
