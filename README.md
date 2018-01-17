@@ -25,4 +25,4 @@
 
 <a href="https://maximryabov22011988.github.io/portfolio/device/catalog.html" target="_blank">Каталог</a>
 
-<a href="https://maximryabov22011988.github.io/portfolio/device/map.html" target="_blank">Карта (при отключенном JS)</a>
+<span><a href="https://maximryabov22011988.github.io/portfolio/device/map.html" target="_blank">Карта</a> (при отключенном JS)</span.
