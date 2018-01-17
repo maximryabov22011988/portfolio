@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Результаты поиска</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/min.style.css">
+    </head>
+    <body>
+        <div class="bg-shadow">
+            <header class="page-header-inner">
+                <nav class="main-navigation-inner">
+                    <ul class="site-navigation">
+                        <li>
+                            <a href="#">Информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="logo">
+                            <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Sedona"></a>
+                        </li>
+                        <li>
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li>
+                            <a href="#">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="page-search">
+            	<section class="filters">
+	            	<form class="filters-form" action="#" method="get">
+	            		<fieldset class="hotel-infrastructure">
+	            			<legend>Инфраструктура:</legend>
+	            			<ul class="infrastructure-list">
+	            				<li>
+	            					<label>
+										<input type="checkbox" name="infrastructure" value="pool">
+										<span class="checkbox-indicator"></span>
+										Бассейн</label>
+	            				</li>
+	            				<li>
+	            					<label>
+										<input type="checkbox" name="infrastructure" value="parking-place">
+										<span class="checkbox-indicator"></span>
+										Парковка</label>
+	            				</li>
+	            				<li>
+	            					<label>
+										<input type="checkbox" name="infrastructure" value="wi-fi">
+										<span class="checkbox-indicator"></span>
+										WI-FI</label>
+	            				</li>
+	            			</ul>
+	            		</fieldset>
+	            		<fieldset class="hotel-type">
+	            			<legend>Тип жилья:</legend>
+	            			<ul class="hotel-type-list">
+	            				<li>
+	            					<label>
+										<input type="checkbox" name="hotel-type" value="hotel">
+										<span class="checkbox-indicator"></span>
+										Гостиница</label>
+	            				</li>
+	            				<li>
+	            					<label>
+										<input type="checkbox" name="hotel-type" value="motel">
+										<span class="checkbox-indicator"></span>
+										Мотель</label>
+	            				</li>
+	            				<li>
+	            					<label>
+										<input type="checkbox" name="hotel-type" value="apartments">
+										<span class="checkbox-indicator"></span>
+										Апартаменты</label>
+	            				</li>
+	            			</ul>
+	            		</fieldset>
+	            		<fieldset class="hotel-cost">
+	            			<legend>Стоимость в сутки (Р):</legend>
+	            			<div class="price-controls">
+								<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+								<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+	            			</div>
+	            			<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+	            			</div>
+	            			<button class="filters-btn" type="submit">Показать</button>
+	            		</fieldset>
+            		</form>
+            	</section>
+				<section class="search-tools">
+					<h1>Найдено: 3</h1>
+					<b>Сортировка:</b>
+					<ul class="sorting-tools">
+						<li><a class="current" href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По рейтингу</a></li>
+					</ul>
+					<button class="control-btn control-btn-up"></button>
+					<button class="control-btn control-btn-down--active"></button>
+				</section>
+				<section class="search-content">
+					<ul class="search-list">
+						<li>
+							<a href="#" class="search-pic">
+								<img src="img/Amara-Resort-and-Spa.jpg" width="135" height="90" alt="Amara Resort and Spa">
+							</a>
+							<div class="search-desc">
+								<div class="hotel-preview">
+									<h2><a class="hotel-name" href="#">Amara Resort &#38; Spa</a></h2>
+									<span class="hotel-type">Гостиница</span>
+									<span class="hotel-cost">от 4000 р.</span>
+									<div class="hotel-navigation">
+										<a class="more-btn" href="#">Подробнее</a>
+										<a class="booking-btn" href="#">Забронировать</a>
+									</div>
+								</div>
+								<div class="hotel-rating">
+									<ul>
+										<li><span class="stars"></span></li>
+										<li><span class="stars"></span></li>
+										<li><span class="stars"></span></li>
+										<li><span class="stars"></span></li>
+									</ul>
+									<p>Рейтинг: 8,5</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="search-pic">
+								<img src="img/Desert-Quail-Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+							</a>
+							<div class="search-desc">
+								<div class="hotel-preview">
+									<h2><a class="hotel-name" href="#">Desert Quail Inn</a></h2>
+									<span class="hotel-type">Мотель</span>
+									<span class="hotel-cost">от 3000 р.</span>
+									<div class="hotel-navigation">
+										<a class="more-btn" href="#">Подробнее</a>
+										<a class="booking-btn" href="#">Забронировать</a>
+									</div>
+								</div>
+								<div class="hotel-rating">
+									<ul>
+										<li><span class="stars"></span></li>
+										<li><span class="stars"></span></li>
+										<li><span class="stars"></span></li>
+									</ul>
+									<p>Рейтинг: 8,9</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="search-pic">
+								<img src="img/Villas-at-Poco-Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+							</a>
+							<div class="search-desc">
+								<div class="hotel-preview">
+									<h2><a class="hotel-name" href="#">Villas at Poco Diablo</a></h2>
+									<span class="hotel-type">Апартаменты</span>
+									<span class="hotel-cost">от 2000 р.</span>
+									<div class="hotel-navigation">
+										<a class="more-btn" href="#">Подробнее</a>
+										<a class="booking-btn" href="#">Забронировать</a>
+									</div>
+								</div>
+								<div class="hotel-rating">
+									<ul>
+										<li><span class="stars"></span></li>
+										<li><span class="stars"></span></li>
+									</ul>
+									<p>Рейтинг: 9,2</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+            </main>
+            <footer class="page-footer-inner">
+    			<p class="footer-hashtag-inst">
+    				<a href="#">#visitsedona</a>
+    			</p>
+                <span class="visually-hidden">Мы в социальных сетях</span>
+    			<ul class="footer-social">
+                    <li><a class="social-btn social-btn-tw" href="#"><span class="visually-hidden">Твитер</span></a></li>
+                    <li><a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a class="social-btn social-btn-yt" href="#"><span class="visually-hidden">Ютуб</span></a></li>
+                </ul>
+    			<p class="footer-copyright">
+    				<b>Website by</b>
+    				<a class="developer" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a>
+    			</p>
+            </footer>
+        </div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1a5d2426f9e1889b08f9fd3d48da4eefc5eeb591a7e0534389c1586a95fffc17&amp;width=1200&amp;height=594&amp;id=yandex-map&amp;lang=ru_RU&amp;scroll=false"></script>
+    </body>
+</html>
