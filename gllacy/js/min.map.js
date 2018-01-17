@@ -1,0 +1,1 @@
+function initMap(){var e={lat:59.938538,lng:30.324444},a=new google.maps.Map(document.getElementById("map"),{zoom:16,center:{lat:59.939469,lng:30.329744},disableDefaultUI:!0});new google.maps.Marker({position:e,map:a,title:"Gllacy Shop",icon:{url:window.devicePixelRatio>1?"my_icon96png":"img/map-marker.png",scaledSize:new google.maps.Size(218,142)}})}

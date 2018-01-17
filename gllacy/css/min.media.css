@@ -1,0 +1,3 @@
+@media screen and (max-width:1200px){.about-company{padding:0 27px}}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.popular-products__img img {max-width:21vw;}}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){.category-products__img img {max-width:21vw;}}

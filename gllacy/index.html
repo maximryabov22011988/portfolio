@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Gllacy Shop - интернет-магазин самого вкусного мороженного</title>
+        <meta name="keywords" content="сливочное мороженное, мороженное с щербетом, фруктовый лед">
+        <meta name="description" content="Gllacy Shop - интернет-магазин самого вкусного мороженного в мире">
+		<meta property="og:title" content="GllacyShop"/>
+		<meta property="og:url" content= "https://www.gllacyshop.ru"/>
+		<meta property="og:image" content="https://www.gllacyshop.ru/img/logo.png"/>
+		<meta property="og:description" content="Интернет-магазин самого вкусного мороженного в мире"/>
+		<meta property="og:type" content="website"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/min.style.css">
+        <link rel="stylesheet" href="css/min.media.css">
+        <link rel="stylesheet" href="css/min.print.css" media="print">
+    </head>
+    <body>
+	    	<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+	    	<input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+	    	<input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+    	<div class="site-wrap">
+			<header class="header">
+				<div class="header__wrap">
+					<div class="header-nav__wrap">
+						<a class="header-logo">
+							<img src="img/logo.png" width="154" height="64" alt="Логотип Gllacy Shop" title="Gllacy Shop - интернет-магазин вкуснейшего мороженного"/>
+						</a>
+						<nav class="header-main-nav">
+							<ul class="main-nav__items" itemscope itemtype="http://schema.org/SiteNavigationElement">
+								<li class="main-nav__item main-nav__item--dropdown">
+									<a class="main-nav__link" href="#" itemprop="url">Каталог</a>
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" itemprop="name">
+											<a class="dropdown-menu__link" href="#" itemprop="url">Новинки</a>
+										</li>
+										<li class="dropdown-menu__item" itemprop="name">
+											<a class="dropdown-menu__link" href="cream-ice-cream.html" itemprop="url">Сливочное</a>
+										</li>
+										<li class="dropdown-menu__item" itemprop="name">
+											<a class="dropdown-menu__link" href="#" itemprop="url">Щербеты</a>
+										</li>
+										<li class="dropdown-menu__item" itemprop="name">
+											<a class="dropdown-menu__link" href="#" itemprop="url">Фруктовый лед</a>
+										</li>
+										<li class="dropdown-menu__item" itemprop="name">
+											<a class="dropdown-menu__link" href="#" itemprop="url">Мелорин</a>
+										</li>
+									</ul>
+								</li>
+								<li class="main-nav__item" itemprop="name">
+									<a class="main-nav__link" href="#" itemprop="url">Доставка и оплата</a>
+								</li>
+								<li class="main-nav__item" itemprop="name">
+									<a class="main-nav__link" href="#" itemprop="url">О Компании</a>
+								</li>
+							</ul>
+							<ul class="user-nav__items">
+								<li class="user-nav__item user-nav__item--search">
+									<button class="btn search-btn" type="button">
+										<span class="ico search-ico"></span>
+									</button>
+									<div class="search">
+										<form class="search-form" action="#" method="get">
+											<div class="input input--search">
+												<input class="input__field input__field--search" id="search"  type="search" name="search" placeholder="Что ищем?">
+												<label class="input__label input__label--search" for="search">
+													<span class="input__label-content input__label-content--search">Что ищем?</span>
+												</label>
+											</div>
+						                </form>
+					                </div>
+								</li>
+								<li class="user-nav__item user-nav__item--login">
+									<button class="btn login-btn" type="button">
+										Вход
+									</button>
+									<div class="login">
+										<form class="login-form" action="#" method="get">
+											<div class="input input--login">
+												<input class="input__field input__field--login" id="login"  type="email" name="login" placeholder="Электронная почта" tabindex="1">
+												<label class="input__label input__label--login" for="login">
+													<span class="input__label-content input__label-content--login">Электронная почта</span>
+												</label>
+											</div>
+											<div class="input input--password">
+												<input class="input__field input__field--password" id="password"  type="password" name="password" placeholder="Пароль?" tabindex="2">
+												<label class="input__label input__label--password" for="password">
+													<span class="input__label-content input__label-content--password">Пароль</span>
+												</label>
+											</div>
+						                    <div class="login-form-button">
+								                <button class="btn enter-btn" type="submit">Войти</button>
+								                <div class="login-authorization">
+							                    	<a class="restore" href="#">Забыли пароль?</a>
+							                    	<a class="registration" href="#">Новая регистрация</a>
+						                    	</div>
+					                    	</div>
+						                </form>
+					                </div>
+								</li>
+								<li class="user-nav__item user-nav__item--minicart">
+									<button class="btn minicart-btn" type="button">
+										Пусто
+									</button>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-phone">
+						<div itemscope itemtype="http://schema.org/LocalBusiness">
+							<meta itemprop="name" content="Gllacy Shop"/>
+							<img class="visually-hidden" src="img/logo.png" width="154" height="64" itemprop="image" alt="Логотип Gllacy Shop"/>
+							<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+								<meta itemprop="streetAddress" content="ул. Большая Конюшенная, 19/8"/>
+								<meta itemprop="postalCode" content="191186"/>
+								<meta itemprop="addressLocality" content="Санкт-Петербург"/>
+							</div>
+							<time itemprop="openingHours" datetime="Mo-Su 10:00-20:00">С 10 до 20, ежедневно</time>
+							<meta itemprop="priceRange" content="от 310 руб./кг до 415 руб./кг"/>
+							<a href="tel:+78124502525" itemprop="url">
+								<span itemprop="telephone">8 812 450-25-25</span>
+							</a>
+						</div>
+		            </div>
+		            <div class="slider">
+		            	<div class="slide" id="slide-1">
+		            		<div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+		            		<a class="btn slide-btn" href="#">Давайте оба!</a>
+		            	</div>
+		            	<div class="slide" id="slide-2">
+		            		<div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+		            		<a class="btn slide-btn" href="#">Давайте оба!</a>
+		            	</div>
+		            	<div class="slide" id="slide-3">
+		            		<div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+		            		<a class="btn slide-btn" href="#">Давайте оба!</a>
+		            	</div>
+		            	<div class="slider-controls">
+		            		<label for="btn-1"></label>
+		            		<label for="btn-2"></label>
+		            		<label for="btn-3"></label>
+		            	</div>
+		            </div>
+				</div>
+			</header>
+			<main>
+				<section class="promo">
+					<ul class="promo__items">
+						<li class="promo__item">
+							<div class="promo__item__title">Малинка даром!</div>
+							<p class="promo__item__desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+							<a class="btn promo-btn" href="https://www.gllacyshop.ru/promo/want-jam">Хочу варенье!</a>
+						</li>
+						<li class="promo__item">
+							<div class="promo__item__title">Шоколадки даром!</div>
+							<p class="promo__item__desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
+							<a class="btn promo-btn" href="https://www.gllacyshop.ru/promo/want-chocolate">Хочу шоколадки!</a>
+						</li>
+					</ul>
+				</section>
+				<section class="popular-products">
+					<ul class="popular-products__items">
+						<li class="popular-products__item" itemscope itemtype="http://schema.org/Product">
+							<div class="popular-products__wrap">
+								<a class="popular-products__img" href="#" itemprop="image" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+									<img src="img/creamy-ice-cream-with-orange-jam-and-citrus-shavings.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"/>
+								</a>
+								<div class="popular-products__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+									<div>
+										<span class="price">310</span>
+										<span class="price__unit">
+											<b>Р</b>
+											/кг
+										</span>
+									</div>
+									<meta itemprop="price" content="310.00"/>
+									<meta itemprop="priceCurrency" content="RUB"/>
+								</div>
+							</div>
+							<h3 class="popular-products__name" itemprop="name">
+								<a class="popular-products__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+							</h3>
+							<meta itemprop="description" content="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой"/>
+							<div class="popular-products__btn__wrap">
+								<button class="btn view-btn" type="button">Быстрый просмотр</button>
+							</div>
+						</li>
+						<li class="popular-products__item" itemscope itemtype="http://schema.org/Product">
+							<div class="popular-products__wrap">
+								<a class="popular-products__img" href="#" itemprop="image" title="Сливочно-кофейное мороженное с кусочками шоколада">
+									<img src="img/creamy-coffee-ice-cream-with-chunks-of-chocolate.png" width="267" height="267" alt="Сливочно-кофейное мороженное с кусочками шоколада"/>
+								</a>
+								<div class="popular-products__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+									<div>
+										<span class="price">380</span>
+										<span class="price__unit">
+											<b>Р</b>
+											/кг
+										</span>
+									</div>
+									<meta itemprop="price" content="380.00"/>
+									<meta itemprop="priceCurrency" content="RUB"/>
+								</div>
+							</div>
+							<h3 class="popular-products__name" itemprop="name">
+								<a class="popular-products__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+							</h3>
+							<meta itemprop="description" content="Сливочно-кофейное мороженное с кусочками шоколада"/>
+							<div class="popular-products__btn__wrap">
+								<button class="btn view-btn" type="button">Быстрый просмотр</button>
+							</div>
+						</li>
+						<li class="popular-products__item" itemscope itemtype="http://schema.org/Product">
+							<div class="popular-products__wrap">
+								<a class="popular-products__img" href="#" itemprop="image" title="Сливочно-клубничное мороженное с присыпкой из белого шоколада">
+									<img src="img/cream-strawberry-ice-cream-with-powder-from-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное мороженное с присыпкой из белого шоколада"/>
+								</a>
+								<div class="popular-products__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+									<div>
+										<span class="price">355</span>
+										<span class="price__unit">
+											<b>Р</b>
+											/кг
+										</span>
+									</div>
+									<meta itemprop="price" content="355.00"/>
+									<meta itemprop="priceCurrency" content="RUB"/>
+								</div>
+							</div>
+							<h3 class="popular-products__name" itemprop="name">
+								<a class="popular-products__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+							</h3>
+							<meta itemprop="description" content="Сливочно-клубничное мороженное с присыпкой из белого шоколада"/>
+							<div class="popular-products__btn__wrap">
+								<button class="btn view-btn" type="button">Быстрый просмотр</button>
+							</div>
+						</li>
+						<li class="popular-products__item" itemscope itemtype="http://schema.org/Product">
+							<div class="popular-products__wrap">
+								<a class="popular-products__img" href="#" itemprop="image" title="Сливочное крем-брюле мороженное с карамельной подливкой">
+									<img src="img/creamy-creme-brulee-with-caramel-gravy.png" width="267" height="267" alt="Сливочное крем-брюле мороженное с карамельной подливкой"/>
+								</a>
+								<div class="popular-products__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+									<div>
+										<span class="price">415</span>
+										<span class="price__unit">
+											<b>Р</b>
+											/кг
+										</span>
+									</div>
+									<meta itemprop="price" content="415.00"/>
+									<meta itemprop="priceCurrency" content="RUB"/>
+								</div>
+							</div>
+							<h3 class="popular-products__name" itemprop="name">
+								<a class="popular-products__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+							</h3>
+							<meta itemprop="description" content="Сливочное крем-брюле мороженное с карамельной подливкой"/>
+							<div class="popular-products__btn__wrap">
+								<button class="btn view-btn" type="button">Быстрый просмотр</button>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="about-company">
+					<div class="about-company-wrap" >
+						<h1>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+						<ul class="feature__items">
+							<li class="feature__item">
+								<span class="feature__ico"></span>
+								<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+							</li>
+							<li class="feature__item">
+								<span class="feature__ico"></span>
+								<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+							</li>
+							<li class="feature__item">
+								<span class="feature__ico"></span>
+								<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+							</li>
+							<li class="feature__item">
+								<span class="feature__ico"></span>
+								<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="article">
+					<div class="new-article" itemscope itemtype="http://schema.org/BlogPosting">
+				        <div class="article-title">Новое в нашем блоге</div>
+					    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+					    	<link href="www.gllacyshop.ru/blogs/serving-of-fruit-sherbet" itemprop="mainEntityOfPage" itemscope/>
+					        <div class="visually-hidden" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+					            <img src="img/logo.png" itemprop="image url" alt="Gllacy Shop"/>
+					            <meta itemprop="width" content="154"/>
+					            <meta itemprop="height" content="64"/>
+					        </div>
+					        <meta itemprop="telephone" content="8 (812) 450-25-25"/>
+					        <meta itemprop="address" content="Россия"/>
+					        <meta itemprop="name" content="www.gllacyshop.ru"/>
+					    </div>
+				        <meta itemprop="datePublished" content="2017-07-26"/>
+				        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+					        <meta itemprop="name" content="Максим Рябов"/>
+					    </span>
+						<div itemprop="articleBody">
+					        <h2 itemprop="headline">
+					        	<a class="new-article__link" href="https://www.gllacyshop.ru/promo/ways-of-serving-fruit-sherbet">10 способов сервировки фруктовых щербетов к столу</a>
+					        </h2>
+						</div>
+						<img class="visually-hidden" src="img/article_bg.jpg" width="0" height="0" itemprop="image url" alt="10 способов сервировки фруктовых щербетов к столу"/>
+					</div>
+					<div class="subscribe">
+						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+						<form class="subscribe-form" action="#" autocomplete="off" method="post" target="_blank">
+							<div class="input input--subscribe">
+								<input class="input__field input__field--subscribe" id="email" type="email" name="email" placeholder="Электронная почта">
+								<label class="input__label input__label--subscribe" for="email">
+									<span class="input__label-content input__label-content--subscribe">Электронная почта</span>
+								</label>
+							</div>
+							<input class="btn subscribe-btn" type="submit" name="subscribe" value="Отправить">
+						</form>
+					</div>
+				</section>
+				<section class="contacts">
+					<div class="contacts-info-wrap">
+						<div class="contacts-info">
+							<div itemscope itemtype="http://schema.org/LocalBusiness">
+								<meta itemprop="name" content="Gllacy Shop"/>
+								<img class="visually-hidden" src="img/logo.png" width="154" height="64" itemprop="image" alt="Логотип Gllacy Shop"/>
+								<span>Адрес главного офиса<br> и офлайн магазина:</span>
+								<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">ул. Большая Конюшенная, 19/8,</span>
+									<meta itemprop="postalCode" content="191186"/>
+									<span itemprop="addressLocality"> Санкт-Петербург</span>
+								</div>
+								<span>Для заказов по телефону:</span>
+								<span class="phone" itemprop="telephone">8 812 450-25-25</span>
+								<time itemprop="openingHours" datetime="Mo-Su 10:00-20:00">(c 10 до 20, ежедневно)</time>
+								<meta itemprop="priceRange" content="от 310 руб./кг до 415 руб./кг"/>
+							</div>
+							<button class="btn feedback-btn" id="feedback-btn" type="button">Форма обратной связи</button>
+						</div>
+					</div>
+					<div id="map"></div>
+				</section>
+			</main>
+			<footer class="footer">
+	            <section class="footer-social">
+	                <a class="social-btn social-btn-tw" href="#" title="Получаейте последние новости первым">Твиттер</a>
+	                <a class="social-btn social-btn-inst" href="#" title="Тонны фото нашего вкуснейшего мороженого">Инстаграмм</a>
+	                <a class="social-btn social-btn-fb" href="#" title="Присоединяйтесь к нам в Facebook">Фейсбук</a>
+	                <a class="social-btn social-btn-vk" href="#" title="Присоединяйтесь к нам в Контакте">Вконтакте</a>
+	            </section>
+	            <section class="footer-nav">
+	            	<div class="footer-nav-wrap">
+		            	<ul class="footer-nav__items" itemscope itemtype="http://schema.org/SiteNavigationElement">
+							<li class="footer-nav__item" itemprop="name">
+								<a class="footer-nav__item__link" href="#" itemprop="url">Для поставщиков</a>
+							</li>
+							<li class="footer-nav__item" itemprop="name">
+								<a class="footer-nav__item__link" href="#" itemprop="url">О производстве</a>
+							</li>
+						</ul>
+		            	<ul class="footer-nav__items" itemscope itemtype="http://schema.org/SiteNavigationElement">
+							<li class="footer-nav__item" itemprop="name">
+								<a class="footer-nav__item__link" href="#" itemprop="url">Наши документы</a>
+							</li>
+							<li class="footer-nav__item" itemprop="name">
+								<a class="footer-nav__item__link" href="#" itemprop="url">Экологические стандарты</a>
+							</li>
+						</ul>
+					</div>
+	            </section>
+	            <section class="copyright">
+	            	<span class="ico copyright-ico"></span>
+	            	<b>Сделано в <a href="https://htmlacademy.ru/" title="Интерактивные онлайн-курсы по веб-разработке">HTML Academy</a> © 2017</b>
+	            </section>
+			</footer>
+			<div class="modal-content" id="modal_form" style="display: none; top: 45%; opacity: 0;">
+				<button class="modal-content-close" id="modal_close" type="button">Закрыть</button>
+				<h1 class="modal-content__title">Мы обязательно вам ответим!</h1>
+				<form class="send-message" action="#" method="post">
+					<div class="input input--first-name">
+						<input class="input__field input__field--first-name" id="first-name"  type="text" name="first-name" placeholder="Как вас зовут?">
+						<label class="input__label input__label--first-name" for="first-name">
+							<span class="input__label-content input__label-content--first-name">Как вас зовут?</span>
+						</label>
+					</div>
+					<div class="input input--e-mail">
+						<input class="input__field input__field--e-mail" id="e-mail"  type="email" name="e-mail" placeholder="Ваша почта для ответа?">
+						<label class="input__label input__label--e-mail" for="e-mail">
+							<span class="input__label-content input__label-content--e-mail">Ваша почта для ответа?</span>
+						</label>
+					</div>
+					<textarea class="message-text" name="message-text" cols="52" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+				</form>
+				<div class="send-message-btn__wrap">
+					<button class="btn send-message-btn" type="submit">Отправить</button>
+				</div>
+			</div>
+			<div id="overlay" style="display: none;"></div>
+		</div>
+		<script src="js/min.classie.js"></script>
+		<script src="js/min.input.hover.js"></script>
+		<script src="js/min.map.js"></script>
+        <script src="js/min.jquery.js"></script>
+		<script src="js/min.popup.js"></script>
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuFNHGkyX3fP-_phd2i8550CT_whBne6U&callback=initMap"></script>
+    </body>
+</html>
